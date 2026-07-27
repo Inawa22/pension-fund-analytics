@@ -889,7 +889,7 @@ with tab3:
     st.markdown('<p class="section-header">Rolling Volatility</p>', unsafe_allow_html=True)
     if not rolling_vol_f.empty:
         fig_rvol_full = plot_rolling_volatility(rolling_vol_f)
-        st.plotly_chart(fig_rvol_full, use_container_width=True)
+        st.plotly_chart(fig_rvol_full, use_container_width=True, key="rolling_volatility_full")
 
     # Distribution stats table
     st.markdown('<p class="section-header">Return Distribution Statistics</p>', unsafe_allow_html=True)
